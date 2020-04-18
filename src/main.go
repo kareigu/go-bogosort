@@ -12,9 +12,10 @@ func random(min int, max int) int {
 
 func main() {
     rand.Seed(time.Now().UnixNano())
-    var value = 0
-    for true {
-	value = random(0, 99999)
+    var i = 0
+    for i < 10 {
+	var value = random(0, 99999)
     	fmt.Println(value)
+	i++
     }
 }
