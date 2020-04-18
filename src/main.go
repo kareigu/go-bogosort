@@ -3,7 +3,7 @@ package main
 import (
 	 "fmt"
 	 "math/rand"
-         "time"
+	 "time"
 )
 
 func random(min int, max int) int {
@@ -11,11 +11,11 @@ func random(min int, max int) int {
 }
 
 func main() {
-    rand.Seed(time.Now().UnixNano())
-    var i = 0
-    for i < 10 {
-	var value = random(0, 99999)
-    	fmt.Println(value)
-	i++
-    }
+	rand.Seed(time.Now().UnixNano())
+	var i = 0
+	for i < 10 {
+		var value = random(0, 99999)
+		fmt.Println(value)
+		i++
+	}
 }
