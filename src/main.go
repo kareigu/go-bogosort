@@ -36,6 +36,7 @@ func main() {
 
 	var isSorted bool = false
 	var iterations int = 0
+	
 	for !isSorted {
 		arrayToSort = shuffleArray(arrayToSort)
 		if isEqual(sortedArray, arrayToSort) {
